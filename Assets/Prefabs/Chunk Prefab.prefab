@@ -193,6 +193,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Chunk
   fencePrafeb: {fileID: 2458157998936691641, guid: c983a5a7c457e44faa5e5132d88b8b91, type: 3}
+  applePrafeb: {fileID: 2482406102407806403, guid: 73b50c9fe87cb4e07bee22c3dd60109d, type: 3}
+  coinPrafeb: {fileID: 2354160371161935576, guid: 30d84704219dc437eb3f47c83b9724f4, type: 3}
+  appleSpawnChance: 0.3
+  coinSpawnChance: 0.5
   lanes:
   - -2.5
   - 0
