@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
     [SerializeField] GameObject chunkPrefab;
+    [SerializeField] CameraController cameraController;
     [SerializeField] int startingChunkAmount=12; 
     [SerializeField] Transform chunkParent;
     [SerializeField]float chunkLenght=10f;
@@ -29,6 +31,7 @@ public class LevelGenerator : MonoBehaviour
         }
 
         Physics.gravity=new Vector3(Physics.gravity.x,Physics.gravity.y,Physics.gravity.z-speedAmount);
+        cameraController.ChangeCamera(speedAmount);
     }
      void SpawnStartingChunks()
     {
