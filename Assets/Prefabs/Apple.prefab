@@ -41,8 +41,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8529100201465477518}
-  - component: {fileID: -8935623884189814148}
   - component: {fileID: 2102110954637291389}
+  - component: {fileID: 2939857221597720240}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Untagged
@@ -66,18 +66,6 @@ Transform:
   - {fileID: 1051186033432517621}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8935623884189814148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2482406102407806403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5a23d6f106c8468ab1141c386824e8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Pickup
 --- !u!136 &2102110954637291389
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -101,6 +89,18 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0.85, z: 0}
+--- !u!114 &2939857221597720240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482406102407806403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39eb066eb943e4d1b91bcb1bd543d8ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Apple
 --- !u!1001 &3313302170900181557
 PrefabInstance:
   m_ObjectHideFlags: 0
