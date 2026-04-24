@@ -9,7 +9,13 @@ public class GameManager : MonoBehaviour
 [SerializeField] float startTime=5f;
 
 float timeLeft;
-bool gameOver=false;
+public bool gameOver=false;
+
+public bool GameOver
+    {
+        get{return gameOver;}
+        set{gameOver=value;}
+    }
 
 
     void Start()
@@ -26,7 +32,6 @@ bool gameOver=false;
         }
 
     }
-
     private bool DecreaseTime()
     {
         if (gameOver) return false;
@@ -35,13 +40,13 @@ bool gameOver=false;
 
         if (timeLeft <= 0f)
         {
-            GameOver();
+            PlayerGameOver();
         }
 
         return true;
     }
 
-    void GameOver()
+    void PlayerGameOver()
         {
             gameOver=true;
             playerController.enabled=false;
